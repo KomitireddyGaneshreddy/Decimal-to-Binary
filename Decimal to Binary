@@ -1,0 +1,27 @@
+#Decimal to Binary
+def DtoB():
+    n=int(input("Enter a number"))
+    while(n!=1 and n!=0):
+        remainder=(n%2) #Remainder
+        l=list()
+        l.append(remainder)   #Not appending
+        quotient=(n-remainder)/2
+        n=quotient
+        
+        
+        
+        print(remainder)
+        
+    if (n==1):
+      l.append(1)
+    if (n==0):
+      l.append(0)
+    print(l)
+    
+    return l
+
+
+        
+       
+       
+c=DtoB()
